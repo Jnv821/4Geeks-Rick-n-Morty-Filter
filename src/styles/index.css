@@ -10,3 +10,39 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body {
+    background-color: black;
+    color: white;
+}
+.nostyle {
+    list-style: none;
+    color: white;
+}
+
+.inline{
+    display: inline-block;
+    margin: 10px;
+    width: 370px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 20px;
+    border-bottom: 3px solid rgb(50, 50, 50);
+    border-right: 3px solid rgb(50,50,50);
+    animation: EaseIn 1s ease forwards;
+}
+
+.inline:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+@keyframes EaseIn {
+    from {
+        transform: translateX(-100px);
+        opacity: 10%;
+    } to {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
