@@ -22,7 +22,7 @@ body {
 
 .inline{
     display: inline-block;
-    margin: 10px;
+    margin: 30px;
     width: 370px;
     background-color: rgb(30, 30, 30);
     text-align: center;
@@ -33,8 +33,55 @@ body {
     animation: EaseIn 1s ease forwards;
 }
 
+.male{
+    background: linear-gradient(45deg,
+    #0352ac 0 3%, /* start at 40% (fixed because 0 is smaller than 40%) and end at 60% */
+    #0077ff 0 6%,   /* start at 0 and end at 20% */
+    #55a4ff 0 9%, /* start at 20% (fixed because 0 is smaller than 20%) and end at 40% */
+    #1E1E1E 0 100%);
+}
+
+.female{
+    background: linear-gradient(45deg,
+    #ab038f 0 3%, /* start at 40% (fixed because 0 is smaller than 40%) and end at 60% */
+    #f0a 0 6%,   /* start at 0 and end at 20% */
+    #ff57c7 0 9%, /* start at 20% (fixed because 0 is smaller than 20%) and end at 40% */
+    #1E1E1E 0 100%);
+}
+
+.unknowngender{
+    background: linear-gradient(45deg,
+    #ab8f03 0 3%, /* start at 40% (fixed because 0 is smaller than 40%) and end at 60% */
+    #ffd500 0 6%,   /* start at 0 and end at 20% */
+    #ffe357 0 9%, /* start at 20% (fixed because 0 is smaller than 20%) and end at 40% */
+    #1E1E1E 0 100%);
+}
 .inline:hover {
     background-color: rgb(50, 50, 50);
+}
+
+.status{
+    font-size: 24px;
+    background-color: rgb(100, 100, 100);
+    padding: 5px;
+    border-radius: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    margin: 0px;
+}
+
+.alive{
+    background-color: rgb(22, 184, 22);
+}
+
+.dead{
+    background-color: red;
+}
+
+.unknown{
+    background-color: #b99b05;
 }
 
 @keyframes EaseIn {

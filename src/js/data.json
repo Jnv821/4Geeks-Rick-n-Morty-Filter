@@ -203,5 +203,15 @@
        "name": "Interdimensional Cable"
      },
      "image": "https://rickandmortyapi.com/api/character/avatar/20.jpeg"
-   }
- ]
+   },
+  {
+    "id":21,
+    "name":"Aqua Morty",
+    "status":"unknown",
+    "gender":"Male",
+    "location":{
+      "name":"Another Location to Test"
+      },
+    "image":"https://rickandmortyapi.com/api/character/avatar/21.jpeg"
+  }
+]
