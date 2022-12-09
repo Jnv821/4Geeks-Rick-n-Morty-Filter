@@ -12,17 +12,9 @@ const CharacterList = ((props) => {
         
     // Check Genders
     let styles = ""
-    switch(character.gender){
-        case "Male":
-        styles = "inline male"
-        break;
-        case "Female":
-        styles = "inline female"
-        break;
-        case "unknown":
-        styles = "inline unknowngender"
-        break;
-    }
+    if(character.gender === "Male") styles = "inline male"
+    if(character.gender === "Female") styles = "inline female"
+    if(character.gender === "unknown") styles = "inline unknowngender"
         
         return (<li key={character.id} className={styles}>
                 <CharacterCard character={character}/>
